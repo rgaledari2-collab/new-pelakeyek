@@ -1,0 +1,6 @@
+{
+  "name": "سامانه اطلس روستایی امام‌رضایی‌ها (خرمشهر و شلمچه)",
+  "description": "سامانه تعاملی پایش، آمار و پرونده اطلاعات روستاهای منطقه خرمشهر و شلمچه - جمعیت امام‌رضایی‌ها",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
