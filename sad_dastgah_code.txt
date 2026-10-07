@@ -1,0 +1,421 @@
+const sadDastgahStatsHtml = `<div class="dos-content-grid" id="stats-content">
+    <!-- جدول ۱: تقسیمات و مشخصات عمومی صد دستگاه -->
+    <div style="margin-bottom: 12px;">
+        <details class="dos-accordion">
+            <summary class="dos-accordion-header">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <h2 class="dos-section-title" style="margin:0; font-size:13.5px; font-weight:800;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; color:var(--brand-clay);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        تقسیمات، موقعیت جغرافیایی و جمعیت صد دستگاه
+                    </h2>
+                    <span style="font-size:11px; background:#eff6ff; color:#1d4ed8; padding:2px 8px; border-radius:12px; font-weight:700;">۸۸۲ نفر · ۲۱۱ خانوار</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="dos-accordion-hint">کلیک جهت مشاهده جزئیات</span>
+                    <span class="dos-accordion-chevron">▾</span>
+                </div>
+            </summary>
+            <div class="dos-accordion-body" style="padding-top:14px;">
+                <table class="dos-table" style="width:100%; border-collapse:collapse; margin-bottom:12px;">
+                    <thead>
+                        <tr style="background:#f1eee7; color:var(--ink);">
+                            <th>شاخص</th>
+                            <th>مقدار مستند</th>
+                            <th>شاخص</th>
+                            <th>مقدار مستند</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight:800;">بخش</td>
+                            <td>مرکزی</td>
+                            <td style="font-weight:800;">طول جغرافیایی</td>
+                            <td style="direction:ltr; text-align:right;">48°10'30" E</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:800;">شهرستان</td>
+                            <td>خرمشهر</td>
+                            <td style="font-weight:800;">عرض جغرافیایی</td>
+                            <td style="direction:ltr; text-align:right;">30°27'05" N</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:800;">استان</td>
+                            <td>خوزستان</td>
+                            <td style="font-weight:800;">بُعد خانوار</td>
+                            <td>۴.۱۸ نفر</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:800;">جمعیت کل</td>
+                            <td style="font-weight:900; color:#15803d;">۸۸۲ نفر</td>
+                            <td style="font-weight:800;">تعداد خانوار</td>
+                            <td style="font-weight:900; color:#b45309;">۲۱۱ خانوار</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+
+    <!-- جدول ۲: زیرساخت‌های صد دستگاه -->
+    <div style="margin-bottom: 12px;">
+        <details class="dos-accordion">
+            <summary class="dos-accordion-header">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <h2 class="dos-section-title" style="margin:0; font-size:13.5px; font-weight:800;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; color:var(--brand-clay);"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        زیرساخت‌ها و اماکن مهم صد دستگاه
+                    </h2>
+                    <span style="font-size:11px; background:#f0fdf4; color:#15803d; padding:2px 8px; border-radius:12px; font-weight:700;">۲ کانون فعال</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="dos-accordion-hint">کلیک جهت مشاهده</span>
+                    <span class="dos-accordion-chevron">▾</span>
+                </div>
+            </summary>
+            <div class="dos-accordion-body" style="padding-top:14px;">
+                <table class="dos-table" style="width:100%; border-collapse:collapse;">
+                    <thead>
+                        <tr style="background:#f1eee7; color:var(--ink);">
+                            <th style="width:60px;">ردیف</th>
+                            <th>عنوان زیرساخت</th>
+                            <th>متراژ / مشخصات</th>
+                            <th>آمار و وضعیت</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>۱</td>
+                            <td style="font-weight:800;">مسجد صاحب‌الزمان</td>
+                            <td>کانون فرهنگی، مذهبی و محرومیت‌زدایی محله</td>
+                            <td><span style="color:#15803d; font-weight:800;">فعال</span></td>
+                        </tr>
+                        <tr>
+                            <td>۲</td>
+                            <td style="font-weight:800;">مدرسه علویه - راهیان نور</td>
+                            <td>مجتمع آموزشی ۲ مقطعی (ابتدایی و متوسطه اول)</td>
+                            <td style="font-weight:800; color:#b45309;">۶۹۵ دانش‌آموز</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+
+    <!-- جدول ۳: مدارس و دانش‌آموزان صد دستگاه -->
+    <div style="margin-bottom: 12px;">
+        <details class="dos-accordion">
+            <summary class="dos-accordion-header">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <h2 class="dos-section-title" style="margin:0; font-size:13.5px; font-weight:800;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; color:var(--brand-clay);"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        دانش‌آموزان مدارس صد دستگاه (۶۹۵ نفر)
+                    </h2>
+                    <span style="font-size:11px; background:#fef3c7; color:#b45309; padding:2px 8px; border-radius:12px; font-weight:700;">۲ مرکز آموزشی</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="dos-accordion-hint">کلیک جهت مشاهده تفکیک مقاطع</span>
+                    <span class="dos-accordion-chevron">▾</span>
+                </div>
+            </summary>
+            <div class="dos-accordion-body" style="padding-top:14px;">
+                <table class="dos-table" style="width:100%; border-collapse:collapse;">
+                    <thead>
+                        <tr style="background:#f1eee7; color:var(--ink);">
+                            <th>نام مدرسه</th>
+                            <th>پیش‌دبستانی</th>
+                            <th>پایه اول</th>
+                            <th>پایه دوم</th>
+                            <th>پایه سوم</th>
+                            <th>پایه چهارم</th>
+                            <th>پایه پنجم</th>
+                            <th>پایه ششم</th>
+                            <th>جمع</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight:800;">دبستان علویه</td>
+                            <td>—</td>
+                            <td>۴۹</td>
+                            <td>۳۸</td>
+                            <td>۴۰</td>
+                            <td>۵۳</td>
+                            <td>۵۳</td>
+                            <td>۳۲</td>
+                            <td style="font-weight:900; color:#15803d;">۲۶۵</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight:800;">متوسطه اول - راهیان نور</td>
+                            <td colspan="7" style="text-align:center; color:#64748b;">مقطع متوسطه اول فعال</td>
+                            <td style="font-weight:900; color:#b45309;">۴۳۰</td>
+                        </tr>
+                        <tr style="background:#faf5eb; font-weight:900;">
+                            <td colspan="8" style="text-align:right;">مجموع کل دانش‌آموزان صد دستگاه</td>
+                            <td style="color:#b91c1c; font-size:14px;">۶۹۵</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+
+    <!-- جدول ۴: لیست ایتام صد دستگاه -->
+    <div style="margin-bottom: 12px;">
+        <details class="dos-accordion">
+            <summary class="dos-accordion-header">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <h2 class="dos-section-title" style="margin:0; font-size:13.5px; font-weight:800;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; color:var(--brand-clay);"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                        لیست ایتام صد دستگاه (۳ پرونده مستند)
+                    </h2>
+                    <span style="font-size:11px; background:#fee2e2; color:#b91c1c; padding:2px 8px; border-radius:12px; font-weight:700;">۳ نفر تحت حمایت</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="dos-accordion-hint">کلیک جهت مشاهده سطرها</span>
+                    <span class="dos-accordion-chevron">▾</span>
+                </div>
+            </summary>
+            <div class="dos-accordion-body" style="padding-top:14px;">
+                <table class="dos-table" style="width:100%; border-collapse:collapse;">
+                    <thead>
+                        <tr style="background:#f1eee7; color:var(--ink);">
+                            <th style="width:40px;">ردیف</th>
+                            <th>نام سرپرست</th>
+                            <th>کد ملی سرپرست</th>
+                            <th>نام و خانوادگی یتیم</th>
+                            <th>نام پدر</th>
+                            <th>کد ملی یتیم</th>
+                            <th>سن</th>
+                            <th>تحصیلات</th>
+                            <th>مدرسه</th>
+                            <th>آدرس</th>
+                            <th>شماره تماس</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dos-row-orphan" data-guardian="صدیقه زباری" data-national-id="1820612635" data-phone="09356466599" data-address="صد دستگاه – منازل بندر - ردیف ۴ – پلاک ۱۰" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>1</td>
+                            <td style="font-weight:700;">صدیقه زباری</td>
+                            <td style="font-family:monospace; font-size:11.5px;">181621234</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#b45309; text-decoration:underline;">دنیا عریضاوی</span></td>
+                            <td>هاشم</td>
+                            <td style="font-family:monospace; font-size:11.5px; font-weight:700;">1820612635</td>
+                            <td>۱۹</td>
+                            <td>دانشجو</td>
+                            <td>دانشگاه</td>
+                            <td style="font-size:11px; max-width:180px;">صد دستگاه – منازل بندر - ردیف ۴ – پلاک ۱۰</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:11.5px;">09356466599</td>
+                        </tr>
+                        <tr class="dos-row-orphan" data-guardian="سمیه سلیمانی" data-national-id="1820699374" data-phone="09307879842" data-address="صد دستگاه – پشت مدرسه راهیان نور – پلاک ۱" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>2</td>
+                            <td style="font-weight:700;">سمیه سلیمانی</td>
+                            <td style="font-family:monospace; font-size:11.5px;">1090318480</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#b45309; text-decoration:underline;">مرام طیبی</span></td>
+                            <td>احمد</td>
+                            <td style="font-family:monospace; font-size:11.5px; font-weight:700;">1820699374</td>
+                            <td>۱۷</td>
+                            <td>یازدهم</td>
+                            <td>شهدای شمخانی</td>
+                            <td style="font-size:11px; max-width:180px;">صد دستگاه – پشت مدرسه راهیان نور – پلاک ۱</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:11.5px;">09307879842</td>
+                        </tr>
+                        <tr class="dos-row-orphan" data-guardian="ملکه عنبی (عمه)" data-national-id="1811448712" data-phone="09165764199 - 09168107791" data-address="صد دستگاه – منازل اداره بندر – پلاک ۹" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>3</td>
+                            <td style="font-weight:700;">ملکه عنبی (عمه)</td>
+                            <td style="font-family:monospace; font-size:11.5px;">1820514536</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#b45309; text-decoration:underline;">رسول عنبی</span></td>
+                            <td>جاسم</td>
+                            <td style="font-family:monospace; font-size:11.5px; font-weight:700;">1811448712</td>
+                            <td>۱۷</td>
+                            <td>دهم</td>
+                            <td>شهر</td>
+                            <td style="font-size:11px; max-width:180px;">صد دستگاه – منازل اداره بندر – پلاک ۹</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:11.5px;">09165764199 - 09168107791</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+
+    <!-- جدول ۵: خانوارهای کم‌برخوردار صد دستگاه -->
+    <div style="margin-bottom: 12px;">
+        <details class="dos-accordion">
+            <summary class="dos-accordion-header">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <h2 class="dos-section-title" style="margin:0; font-size:13.5px; font-weight:800;">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle; color:var(--brand-clay);"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        خانوارهای کم‌برخوردار صد دستگاه (۲۱ پرونده مستند)
+                    </h2>
+                    <span style="font-size:11px; background:#fef3c7; color:#b45309; padding:2px 8px; border-radius:12px; font-weight:700;">۲۱ خانوار ممیزی‌شده</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="dos-accordion-hint">کلیک جهت مشاهده سطرها</span>
+                    <span class="dos-accordion-chevron">▾</span>
+                </div>
+            </summary>
+            <div class="dos-accordion-body" style="padding-top:14px;">
+                <table class="dos-table" style="width:100%; border-collapse:collapse;">
+                    <thead>
+                        <tr style="background:#f1eee7; color:var(--ink);">
+                            <th style="width:40px;">ردیف</th>
+                            <th>نام و نام خانوادگی</th>
+                            <th>کد ملی</th>
+                            <th>شماره تماس</th>
+                            <th>آدرس</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1829485121" data-phone="0904467549" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>1</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">مریم غزلاوی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1829485121</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">0904467549</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820064433" data-phone="09386590917" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>2</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">علی محمدی هلالیان</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820064433</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09386590917</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1829411081" data-phone="09045133785" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>3</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">نرگس سلمانیان اصل</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1829411081</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09045133785</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1829654187" data-phone="09375385289" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>4</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">سید هاشم مفتی عریض</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1829654187</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09375385289</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820089150" data-phone="09026844921" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>5</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">حلیمه سلیمانی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820089150</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09026844921</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820264580" data-phone="09166339881" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>6</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">زهرا عسکری</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820264580</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09166339881</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820688755" data-phone="09034148587" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>7</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">فروغ عباسیان پور</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820688755</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09034148587</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1940720079" data-phone="09051806711" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>8</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">سیده کوثر موسوی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1940720079</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09051806711</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="6629861752" data-phone="09036802641" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>9</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">سکینه محمودپور عریض</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">6629861752</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09036802641</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820412326" data-phone="09335463899" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>10</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">علی عباسی کیان</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820412326</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09335463899</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="3979851109" data-phone="09166331644" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>11</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">مرضیه کاشفی سمن</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">3979851109</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09166331644</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="7060016643" data-phone="09169538116" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>12</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">حسین محمدی اطهر</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">7060016643</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09169538116</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1755060106" data-phone="09368915693" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>13</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">محمد مجیل</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1755060106</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09368915693</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820140075" data-phone="0905876667" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>14</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">ایمان خواجه</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820140075</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">0905876667</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1829962981" data-phone="09023558943" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>15</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">رقیه فیسلی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1829962981</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09023558943</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820728528" data-phone="09398034496" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>16</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">عماد فتیلی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820728528</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09398034496</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1820833054" data-phone="09371679793" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>17</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">زینب عبادی نژاد</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1820833054</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09371679793</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1751976548" data-phone="09388673788" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>18</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">قدیمه سلیمانی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1751976548</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09388673788</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1818621029" data-phone="09024190333" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>19</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">حیات جاسم پور بغلانی</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1818621029</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09024190333</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1829632145" data-phone="09361394346" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>20</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">مریم علقمی زاده</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1829632145</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09361394346</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                        <tr class="dos-row-needy" data-guardian="سرپرست خانوار" data-national-id="1828064785" data-phone="09308743894" data-address="صد دستگاه" data-village="صد دستگاه" style="cursor:pointer;" title="کلیک جهت مشاهده شناسنامه پرونده">
+                            <td>21</td>
+                            <td style="font-weight:800; color:#142a29;"><span style="color:#15803d; text-decoration:underline;">راضیه دریس</span></td>
+                            <td style="font-family:monospace; font-size:12px; font-weight:700;">1828064785</td>
+                            <td style="direction:ltr; text-align:right; font-family:monospace; font-size:12px;">09308743894</td>
+                            <td>صد دستگاه</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    </div>
+</div>`;
